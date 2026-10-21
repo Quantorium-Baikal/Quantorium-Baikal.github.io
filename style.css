@@ -1,0 +1,235 @@
+@font-face {
+    font-family: 'Main';
+    src: url('/font/BankGothicRUSSMedium.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+  font-family: 'Main', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.border {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  font-size: 30px;
+  list-style-type: none;
+  margin: 20px;
+}
+
+.border li {
+  margin-top: 50px;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.border li:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  color: rgb(33 58 143);
+}
+
+.border img {
+  width: 400px;
+}
+
+.info {
+  display: flex;
+  background-color: rgb(33 58 143);
+  color: #fff;
+  padding: 20px;
+  font-size: 25px;
+  list-style-type: none;
+  text-align: center;
+}
+
+.main_site {
+  display: flex;
+  gap: 40px;
+  padding: 20px;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.main_site button {
+  background-color: rgb(33 58 143);
+  padding: 20px;
+  border: 2px solid #fff;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Main', sans-serif;
+  font-size: 25px;
+}
+
+.main_site button:hover {
+  border: 2px solid rgb(33 58 143);
+  background: none;
+  transform: scale(1.05);
+  color: rgb(33 58 143);
+  cursor: pointer;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-size: 20px;
+  background-color: rgb(33 58 143);
+  color: #fff;
+  list-style-type: none;
+}
+
+.quests {
+  display: grid;
+}
+
+.main_quests {
+  display: grid;
+  gap: 20px;
+  margin: 20px;
+  justify-content: center;
+}
+
+.first_four, .last_four {
+  display: flex;
+  gap: 20px;
+}
+
+.last_four {
+  margin-bottom: 200px;
+}
+
+.quest img {
+  width: 200px;
+}
+
+.quest {
+  justify-content: center;
+  display: grid;
+  text-align: center;
+  list-style-type: none;
+  font-size: 30px;
+  box-shadow: 0px 0px 50px 0px rgba(34, 60, 80, 0.3);
+  padding: 20px;
+  border-radius: 20px;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.quest:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.quest_one {
+  display: grid;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  list-style-type: none;
+  font-size: 40px;
+}
+
+.quest_one button, input {
+  background-color: rgb(33 58 143);
+  padding: 20px;
+  border: 2px solid #fff;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Main', sans-serif;
+  font-size: 25px;
+}
+
+.quest_one button:hover, input:hover {
+  border: 2px solid rgb(33 58 143);
+  background: none;
+  transform: scale(1.05);
+  color: rgb(33 58 143);
+  cursor: pointer;
+}
+
+.quest_one img {
+  width: 200px;
+  border-radius: 100%;
+  border: 5px solid rgb(33 58 143);
+}
+
+.mainQuestOne {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+  gap: 40px;
+  list-style-type: none;
+  margin-bottom: 200px;
+}
+
+.questOneWant {
+  box-shadow: 0px 0px 50px 0px rgba(34, 60, 80, 0.3);
+  padding: 20px;
+  border-radius: 20px;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  width: 250px;
+  display: grid;
+  gap: 20px;
+  justify-content: center;
+  text-align: center;
+}
+
+.questOneWant:hover {
+  transform: scale(1.05);
+}
+
+.questOneWant button {
+  background-color: rgb(33 58 143);
+  padding: 20px;
+  border: 2px solid #fff;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Main', sans-serif;
+  font-size: 25px;
+}
+
+.questOneWant button:hover {
+  border: 2px solid rgb(33 58 143);
+  background: none;
+  transform: scale(1.05);
+  color: rgb(33 58 143);
+  cursor: pointer;
+}
+
+.mainQuestOne button {
+  background-color: rgb(33 58 143);
+  padding: 20px;
+  border: 2px solid #fff;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Main', sans-serif;
+  font-size: 25px;
+}
+
+.mainQuestOne button:hover {
+  border: 2px solid rgb(33 58 143);
+  background: none;
+  transform: scale(1.05);
+  color: rgb(33 58 143);
+  cursor: pointer;
+}
+
+
+.mainQuestOne img {
+  width: 200px;
+}

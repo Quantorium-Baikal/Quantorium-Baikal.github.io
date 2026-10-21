@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кванториум Байкал | Квесты</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="border">
+      <img src="assets/logo.png">
+
+      <li onclick="open_main()">Главная</li>
+      <li onclick="close_main()">Квесты</li>
+    </div>
+  <div class="main" id="main">
+
+    <div class="info">
+      <li>
+        «Кванториум Байкал» — это бесплатный детский технопарк в Иркутске, где школьники 9–17 лет бесплатно изучают современные инженерные и IT-технологии на передовом оборудовании по направлениям программирования, робототехники, виртуальной реальности, нано- и биотехнологий, альтернативной энергетики и геоинформатики.
+      </li>
+    </div>
+
+    <div class="main_site">
+      <a href="#"><button>Основной Сайт Кванториума</button></a>
+      <a href="#"><button>Сайт Кванториумов по Иркутской Области</button></a>
+    </div>
+  </div>
+
+  <div class="quests" id="quests">
+    <div class="info">
+      <li>
+        Квесты с QR-кодами в «Кванториумах» — это интерактивный формат, где участники сканируют коды смартфонами, чтобы получать задания, подсказки и находить следующие станции; примеры: всероссийский квест «Технолидеры будущего», «КвантоНовый год» в мобильном технопарке и «Город профессий» в Кингисеппе — обычно команда получает маршрутный лист, сканирует код на станции, открывает вопрос или видео, а правильный ответ даёт подсказку, где искать следующую точку; такой формат геймифицирует обучение, знакомит с технологиями и добавляет соревновательный азарт, а актуальные квесты стоит уточнять на сайте или в соцсетях местного «Кванториума».
+      </li>
+    </div>
+
+    <div class="main_quests">
+      <div class="first_four">
+        <div class="quest" onclick="questOneOpen()"><img src="assets/qr-code.png" alt=""><li>Квест 1</li></div>
+        <div class="quest" onclick="questOneOpen()"><img src="assets/qr-code.png" alt=""><li>Квест 2</li></div>
+        <div class="quest" onclick="questOneOpen()"><img src="assets/qr-code.png" alt=""><li>Квест 3</li></div>
+        <div class="quest" onclick="questOneOpen()"><img src="assets/qr-code.png" alt=""><li>Квест 4</li></div>
+      </div>
+      <div class="last_four">
+        <div class="quest" onclick="questOneOpen()"><img src="assets/qr-code.png" alt=""><li>Квест 5</li></div>
+        <div class="quest" onclick="questOneOpen()"><img src="assets/qr-code.png" alt=""><li>Квест 6</li></div>
+        <div class="quest" onclick="questOneOpen()"><img src="assets/qr-code.png" alt=""><li>Квест 7</li></div>
+        <div class="quest" onclick="questOneOpen()"><img src="assets/qr-code.png" alt=""><li>Квест 8</li></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="quest_one" id="quest_one">
+    <div class="title">
+      <img src="assets/qr-code.png">
+      <li>Квест 1</li>
+    </div>
+
+    <button onclick="questOneMainOpen()" id="openQuestOpen">Участвовать</button>
+  </div>
+
+  <div class="mainQuestOne" id="mainQuestOne">
+    <div class="questOneWant" id="oneClick"><img src="assets/qr-code.png" alt=""><li>Задание 1</li><button onclick="blurOneOneClick()">Готово</button></div>
+    <div class="questOneWant" id="twoClick"><img src="assets/qr-code.png" alt=""><li>Задание 2</li><button onclick="blurOneTwoClick()">Готово</button></div>
+    <div class="questOneWant" id="threeClick"><img src="assets/qr-code.png" alt=""><li>Задание 3</li><button onclick="blurOneThreeClick()">Готово</button></div>
+    <div class="questOneWant" id="fourClick"><img src="assets/qr-code.png" alt=""><li>Задание 4</li><button onclick="blurOneFourClick()">Готово</button></div>
+    <div class="questOneWant" id="fiveClick"><img src="assets/qr-code.png" alt=""><li>Задание 5</li><button onclick="blurOneFiveClick()">Готово</button></div>
+    <button id="questOneClose" onclick="close_main()">Закончить</button>
+  </div>
+
+  <div class="footer">
+    <div class="footerinfo">
+      <li>+7 (3952) 488-804</li>
+      <li>kvantorium@detirk.ru</li>
+    </div>
+    <li>© Все права защищены. ГАУ ДО ИО Региональный центр всестороннего развития ребенка «Вектор»</li>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
